@@ -32,11 +32,16 @@ const HandleButton = ({
   const handleRemove = () => {
     if (showDone) {
       handleRemoveToday(workout.id);
-    } else {
-      handleRemoveSaved(workout.id);
+      toast.success("Remove from Today's Plan")
     }
-    toast.success("workout Remove Successfuly")
+   
+     else {
+      handleRemoveSaved(workout.id);
+       toast.success("Remove form saved")
+    }
+    
   };
+   
 
   return (
     <div className="flex items-center gap-3">

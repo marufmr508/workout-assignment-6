@@ -8,6 +8,8 @@ import AddToTodayPlanButton from "./components/Button/addToTodayPlanButton";
 import PlanList from "./components/myPlanPage/PlanList";
  import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/footer/FooterPage";
+// import Footer from "./components/footer/FooterPage";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,11 +37,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <WorkoutProvider>
         <Navbar />
         <ToastContainer />
+        
          
         <main>
 {children}
         </main>
+        <Footer />
         </WorkoutProvider>
+
         </body>
         
     </html>
