@@ -1,3 +1,17 @@
 @import "tailwindcss";
 
 @plugin "daisyui";
+.tab:checked {
+  font-weight: 700;
+  background-color: #a3e635;
+  color: #000;
+  box-shadow: 0 4px 12px rgba(163, 230, 53, 0.25);
+}
+
+.tab:not(:checked) {
+  color: #9ca3af;
+}
+
+.tab:not(:checked):hover {
+  color: white;
+}

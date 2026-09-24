@@ -123,14 +123,13 @@ export const PlanList = () => {
 
       <div className="tabs tabs-lift">
 
-        {/* TODAY'S PLAN TAB */}
-        <input
-          type="radio"
-          name="my_tabs"
-          className="tab"
-          aria-label="Today's Plan"
-          defaultChecked
-        />
+          <input
+  type="radio"
+  name="my_tabs"
+  className="tab"
+  aria-label="Today's Plan"
+  defaultChecked
+/>
 
         <div className="tab-content bg-base-100 border-base-300 p-6">
 
@@ -158,7 +157,7 @@ export const PlanList = () => {
               {addToTodayPlan.map((workout) => (
                 <PlanCard
                   key={workout.id}
-                  workout={workout}
+                  workout={workout} showDone={true}
                 />
               ))}
             </div>
@@ -167,12 +166,12 @@ export const PlanList = () => {
         </div>
 
         {/* SAVED TAB */}
-        <input
-          type="radio"
-          name="my_tabs"
-          className="tab"
-          aria-label="Saved"
-        />
+            <input
+  type="radio"
+  name="my_tabs"
+  className="tab"
+  aria-label="Saved"
+/>
 
         <div className="tab-content bg-base-100 border-base-300 p-6">
 
@@ -200,8 +199,8 @@ export const PlanList = () => {
               {saveForLater.map((workout) => (
                 <PlanCard
                   key={workout.id}
-                  workout={workout}
-                />
+                  workout={workout}  showDone={false} /> 
+                
               ))}
             </div>
           )}

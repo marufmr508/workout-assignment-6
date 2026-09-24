@@ -9,6 +9,8 @@ addToTodayPlan:WorkoutType[];
 setAddToTodayPlan:React.Dispatch<React.SetStateAction<WorkoutType[]>>
 saveForLater:WorkoutType[];
 setSaveForLater:React.Dispatch<React.SetStateAction<WorkoutType[]>>
+  handleRemoveToday: (id: number) => void;
+  handleRemoveSaved: (id: number) => void;
 }
 
 
@@ -18,11 +20,26 @@ export const WorkoutProvider=({children}:{children:React.ReactNode})=>{
     const [addToTodayPlan ,setAddToTodayPlan]=useState<WorkoutType[]>([]);
     const [saveForLater , setSaveForLater]=useState<WorkoutType[]>([]);
 
+     const handleRemoveToday = (id: number) => {
+  setAddToTodayPlan((previous) =>
+    previous.filter((workout) => workout.id !== id)
+  );
+};
+
+const handleRemoveSaved = (id: number) => {
+  setSaveForLater((previous) =>
+    previous.filter((workout) => workout.id !== id)
+  );
+};
+
     const shareData={
 addToTodayPlan,
 setAddToTodayPlan,
 saveForLater,
-setSaveForLater
+setSaveForLater,
+ handleRemoveToday,
+handleRemoveSaved
+
     }
     return (
         <div>

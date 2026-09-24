@@ -5,12 +5,15 @@ import Link from "next/link";
 import { WorkoutType } from "@/types";
 import { FiClock, FiStar, FiX } from "react-icons/fi";
 import { FaFire } from "react-icons/fa";
-
+import  HandleRemove from "@/app/components/Button/handleRemove"
+import HandleButton from "@/app/components/Button/handleRemove";
 interface PlanCardProps {
   workout: WorkoutType;
+  showDone:boolean
 }
 
-const PlanCard = ({ workout }: PlanCardProps) => {
+const PlanCard = ({ workout,showDone }: PlanCardProps) => {
+  
   return (
     <div className="flex items-center gap-4 border-b border-gray-700 bg-[#11141a] p-3">
 
@@ -64,21 +67,10 @@ const PlanCard = ({ workout }: PlanCardProps) => {
         >
           View Details
         </Link>
-
-        <button
-          type="button"
-          className="rounded-full bg-lime-400 px-5 py-2 text-xs font-semibold text-black transition hover:bg-lime-300"
-        >
-          ✓ &nbsp; Mark as Done
-        </button>
-
-        <button
-          type="button"
-          className="text-gray-500 transition hover:text-white"
-          aria-label="Remove workout"
-        >
-          <FiX size={18} />
-        </button>
+     
+      <HandleButton workout={workout}  showDone={showDone} />
+       
+     
 
       </div>
     </div>
