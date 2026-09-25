@@ -1,4 +1,4 @@
-# FitLog — Workout Library
+# Project-Name: FitLog — Workout Library
 
 FitLog is a modern and responsive workout library web application built with Next.js. It helps users to explore different exercises, view detailed gym information, add workouts to today's plan, save workouts for later, and organize their workout list.
 
@@ -42,6 +42,5 @@ The My Plan page allows users to view Today's Plan and Saved workouts, see total
 While developing FitLog, I faced some challenges during implementation:
 
 - **Sorting Workouts:** Implementing the `Sort By` feature for Duration, Calories, and Rating was challenging because the workout list needed to update immediately when the user changed the sorting option.
-- **Maximum Workout Limit:** I needed to make sure that users could not add more than five workouts to Today's Plan. I handled this by checking the current plan length before adding a new workout.
 - **Live Duration and Calories Count:** Updating the total exercise count, duration, and calories when workouts were added or removed was another challenge. I used array methods such as `reduce()` to calculate the total duration and calories dynamically
 - **Managing Today's Plan and Saved Workouts:** Keeping Today's Plan and Saved workouts separate while allowing users to remove items, mark workouts as done, and view them in different tabs required careful state management using React Context.

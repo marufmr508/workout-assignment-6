@@ -15,7 +15,7 @@ export default function WorkoutHero() {
 
         
         <h1 className="max-w-2xl text-3xl leading-[0.95] font-black tracking-tight text-white uppercase sm:text-5xl md:text-5xl">
-          Train With Intent.Log <br /> Every Set.
+          Train With Intent. Log <br /> Every Set.
         </h1>
 
          
