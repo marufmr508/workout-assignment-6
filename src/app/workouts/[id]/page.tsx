@@ -1,12 +1,12 @@
  import React from "react";
-import workoutData from "@/datas/data.json";
+// import workoutData from "@/datas/data.json";
 import { WorkoutType } from "@/types";
 import Link from "next/link";
 import Image from "next/image";
-import { FiCalendar, FiBookmark } from "react-icons/fi";
+// import { FiCalendar, FiBookmark } from "react-icons/fi";
 import AddToTodayPlanButton from "@/app/components/Button/addToTodayPlanButton";
 import { SaveForLaterButton } from "@/app/components/Button/saveForLaterButton";
-import WorkOutList from "@/app/components/workoutList/WorkOutList";
+// import WorkOutList from "@/app/components/workoutList/WorkOutList";
 import data from "@/datas/data.json"
 
  const workouts=data as WorkoutType[]  ;

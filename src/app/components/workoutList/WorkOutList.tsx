@@ -1,7 +1,7 @@
 import React from 'react';
 import WorkOutCard from '../workoutCard/WorkOutCard';
 
-import  workoutData from "@/datas/data.json"
+// import  workoutData from "@/datas/data.json"
 import { WorkoutType } from '@/types';
 import Link from 'next/link';
 // import { Link } from 'lucide-react';

@@ -26,6 +26,7 @@ const HandleButton = ({
   
   const handleDone = () => {
     setIsDone(true);
+    toast.success("Workout marked as done!");
   };
 
    
@@ -37,7 +38,7 @@ const HandleButton = ({
    
      else {
       handleRemoveSaved(workout.id);
-       toast.success("Remove form saved")
+       toast.success("Remove from saved")
     }
     
   };

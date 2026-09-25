@@ -1,5 +1,6 @@
  import Image from "next/image";
  import logo from "@/assets/banner.png"
+import Link from "next/link";
 
 export default function WorkoutHero() {
   return (
@@ -24,9 +25,12 @@ export default function WorkoutHero() {
         </p>
 
         
-        <button className="mt-7 rounded-md bg-lime-400 px-6 py-3 text-xs font-extrabold tracking-wide text-black uppercase transition hover:bg-lime-300">
-          Browse Workouts
-        </button>
+         <Link
+  href="#library"
+  className="mt-7 inline-block rounded-md bg-lime-400 px-6 py-3 text-xs font-extrabold tracking-wide text-black uppercase transition hover:bg-lime-300"
+>
+  Browse Workouts
+</Link>
       </div>
 
        

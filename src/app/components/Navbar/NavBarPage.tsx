@@ -1,14 +1,16 @@
- 
+
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assets/logo.png";
 import { useContext } from "react";
+import { usePathname } from "next/navigation";
 import { WorkOutContext } from "@/app/Context/WorkOutContext";
 
 export default function Navbar() {
   const context = useContext(WorkOutContext);
+  const pathname = usePathname();
 
   if (!context) {
     throw new Error("Navbar must be used inside WorkoutProvider");
@@ -18,8 +20,8 @@ export default function Navbar() {
 
   return (
     <nav className="mx-auto mt-1 flex min-h-[72px] w-full items-center justify-between gap-2 rounded-md border border-gray-400 bg-[#0b0c0f] px-3 text-white sm:px-5 md:px-6">
-
-       
+      
+      {/* Logo */}
       <Link href="/" className="flex shrink-0 items-center gap-2 sm:gap-3">
         <Image
           src={logo}
@@ -32,27 +34,38 @@ export default function Navbar() {
         </span>
       </Link>
 
-       
+      {/* Navigation */}
       <div className="flex items-center gap-1 sm:gap-2">
+        
+        {/* Workout */}
         <Link
-          href="/workouts"
-          className="rounded-full bg-lime-400 px-3 py-2 text-xs font-semibold text-black transition hover:bg-lime-300 sm:px-5 sm:text-sm"
+          href="/#library"
+          className={`rounded-full px-3 py-2 text-xs font-semibold transition sm:px-5 sm:text-sm ${
+            pathname === "/"
+              ? "bg-lime-400 text-black hover:bg-lime-300"
+              : "text-gray-400 hover:text-white"
+          }`}
         >
-          Workouts
+          Workout
         </Link>
 
+        {/* My Plan */}
         <Link
           href="/my-plan"
-          className="rounded-full px-3 py-2 text-xs text-gray-400 transition hover:text-white sm:px-5 sm:text-sm"
+          className={`rounded-full px-3 py-2 text-xs font-semibold transition sm:px-5 sm:text-sm ${
+            pathname === "/my-plan"
+              ? "bg-lime-400 text-black"
+              : "text-gray-400 hover:text-white"
+          }`}
         >
           My Plan
         </Link>
       </div>
 
-      
+      {/* Counters */}
       <div className="flex shrink-0 items-center gap-2 sm:gap-4 md:gap-7">
-
-         
+        
+        {/* Plan */}
         <Link
           href="/my-plan"
           className="flex items-center gap-1 text-gray-300 transition hover:text-white sm:gap-2"
@@ -66,7 +79,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-         
+        {/* Saved */}
         <Link
           href="/my-plan"
           className="flex items-center gap-1 text-gray-400 transition hover:text-white sm:gap-2"
@@ -79,7 +92,6 @@ export default function Navbar() {
             {saveForLater.length}
           </span>
         </Link>
-
       </div>
     </nav>
   );
