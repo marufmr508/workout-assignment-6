@@ -19,48 +19,8 @@ export const PlanList = () => {
   return (
     <section className="w-full">
 
-      {/* <div className="bg-amber-900 w-full flex justify-evenly mx-auto  ">
-         <div>
-<p>Excercise:</p>
-<div>
-
-  {addToTodayPlan.length === 0 ? (
-    <p>0</p>
-  ): (
-     addToTodayPlan.length
-  )}
-
-</div>
-         </div>
-         <div>
-<p>Minutes:</p>
-<div>
-
-  {addToTodayPlan.length === 0 ? (
-    <p>0</p>
-  ): (
-    <p>
-      {  addToTodayPlan.reduce((total, workout) => total+ workout.duration,0)}
-      </p>
-  )}
-
-</div>
-         </div>
-         <div>
-<p>Calories:</p>
-<div>
-
-  {addToTodayPlan.length === 0 ? (
-    <p>0</p>
-  ): (
-    <p>
-      {  addToTodayPlan.reduce((total, workout) => total+ workout.caloriesBurned,0)}
-      </p>
-  )}
-
-</div>
-         </div>
-      </div> */}
+      <h1 className="font-bold text-3xl mt-10 pl-5">MY PLAN</h1>
+      <p className="mb-2 pl-5">Cap of five lifts for today. Finish them, then load more.</p>
     
 <div className="mx-auto grid w-full grid-cols-1 gap-4 rounded-2xl border border-white/10 bg-[#15181d] p-4 shadow-xl sm:grid-cols-3">
 
@@ -165,7 +125,7 @@ export const PlanList = () => {
 
         </div>
 
-        {/* SAVED TAB */}
+       
             <input
   type="radio"
   name="my_tabs"

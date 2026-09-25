@@ -23,12 +23,12 @@ const HandleButton = ({
 
   const [isDone, setIsDone] = useState(false);
 
-  // Mark as Done
+  
   const handleDone = () => {
     setIsDone(true);
   };
 
-  // Remove workout
+   
   const handleRemove = () => {
     if (showDone) {
       handleRemoveToday(workout.id);
@@ -45,7 +45,7 @@ const HandleButton = ({
 
   return (
     <div className="flex items-center gap-3">
-      {/* Mark as Done - only Today's Plan */}
+      
       {showDone && (
         <button
           type="button"
@@ -61,7 +61,7 @@ const HandleButton = ({
         </button>
       )}
 
-      {/* Remove */}
+     
       <button
         type="button"
         onClick={handleRemove}

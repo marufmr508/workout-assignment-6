@@ -14,10 +14,11 @@ interface PlanCardProps {
 }
 
 const PlanCard = ({ workout, showDone }: PlanCardProps) => {
+   
   return (
     <div className="flex flex-col gap-4 border-b border-gray-700 bg-[#11141a] p-3 sm:flex-row sm:items-center sm:p-4">
 
-      {/* Image */}
+       
       <div className="relative h-44 w-full shrink-0 overflow-hidden rounded-lg sm:h-20 sm:w-28">
         <Image
           src={workout.image}
@@ -27,7 +28,7 @@ const PlanCard = ({ workout, showDone }: PlanCardProps) => {
         />
       </div>
 
-      {/* Workout Information */}
+       
       <div className="min-w-0 flex-1">
         <h3 className="truncate text-base font-bold uppercase text-white">
           {workout.name}
@@ -57,18 +58,17 @@ const PlanCard = ({ workout, showDone }: PlanCardProps) => {
         </div>
       </div>
 
-      {/* Actions */}
+      
       <div className="flex w-full shrink-0 items-center justify-between gap-2 sm:w-auto sm:justify-end">
 
-        {/* View Details */}
+        
         <Link
           href={`/workouts/${workout.id}`}
           className="rounded-full border border-gray-700 px-3 py-2 text-xs text-white transition hover:bg-gray-800 sm:px-4"
         >
           View Details
         </Link>
-
-        {/* Done / Remove */}
+ 
         <HandleButton
           workout={workout}
           showDone={showDone}

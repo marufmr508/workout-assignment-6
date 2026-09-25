@@ -45,10 +45,10 @@ const DetailsPage = async ({
     <main className="min-h-screen bg-[#0d0f13] px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
       <div className="max-w-[1200px] mx-auto">
 
-        {/* Main Details Card */}
+         
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6">
 
-          {/* LEFT - IMAGE */}
+           
           <div className="relative w-full h-[380px] sm:h-[450px] lg:h-[480px] rounded-xl overflow-hidden">
             <Image
               src={workout.image}
@@ -60,20 +60,20 @@ const DetailsPage = async ({
             />
           </div>
 
-          {/* RIGHT - CONTENT */}
+          
           <div className="text-white">
 
-            {/* Workout Name */}
+          
             <h1 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight">
               {workout.name}
             </h1>
 
-            {/* Description */}
+            
             <p className="mt-2 text-sm leading-5 text-gray-400 max-w-2xl">
               {workout.description}
             </p>
 
-            {/* Muscle Tags */}
+          
             <div className="flex flex-wrap gap-2 mt-4">
               {Array.isArray(workout.muscleGroups) ? (
                 workout.muscleGroups.map((muscle, index) => (
@@ -91,10 +91,10 @@ const DetailsPage = async ({
               )}
             </div>
 
-            {/* Information Box */}
+            
             <div className="mt-5 rounded-xl border border-gray-800 bg-[#15181e] overflow-hidden">
 
-              {/* Equipment */}
+              
               <div className="flex items-center justify-between px-4 py-3 border-b border-gray-800">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
                   Equipment
@@ -107,7 +107,7 @@ const DetailsPage = async ({
                 </span>
               </div>
 
-              {/* Difficulty */}
+              
               <div className="flex items-center justify-between px-4 py-3 border-b border-gray-800">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
                   Difficulty
@@ -118,7 +118,7 @@ const DetailsPage = async ({
                 </span>
               </div>
 
-              {/* Sets */}
+              
               <div className="flex items-center justify-between px-4 py-3 border-b border-gray-800">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
                   Sets
@@ -129,7 +129,7 @@ const DetailsPage = async ({
                 </span>
               </div>
 
-              {/* Reps */}
+               
               <div className="flex items-center justify-between px-4 py-3 border-b border-gray-800">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
                   Reps
@@ -140,7 +140,7 @@ const DetailsPage = async ({
                 </span>
               </div>
 
-              {/* Duration */}
+               
               <div className="flex items-center justify-between px-4 py-3 border-b border-gray-800">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
                   Duration
@@ -151,7 +151,7 @@ const DetailsPage = async ({
                 </span>
               </div>
 
-              {/* Calories */}
+              
               <div className="flex items-center justify-between px-4 py-3 border-b border-gray-800">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
                   Calories
@@ -162,7 +162,7 @@ const DetailsPage = async ({
                 </span>
               </div>
 
-              {/* Rating */}
+              
               <div className="flex items-center justify-between px-4 py-3">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
                   Rating
@@ -175,7 +175,7 @@ const DetailsPage = async ({
 
             </div>
 
-            {/* Instructions */}
+            
             <div className="mt-5">
               <h2 className="text-xs font-bold uppercase tracking-wide text-white mb-3">
                 Instructions
@@ -192,8 +192,8 @@ const DetailsPage = async ({
               </ol>
             </div>
 
-            {/* Buttons */}
- {/* Buttons */}
+             
+  
 <div className="flex flex-col sm:flex-row gap-3 mt-6">
 
   <AddToTodayPlanButton workout={workout} />
