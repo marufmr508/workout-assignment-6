@@ -54,7 +54,7 @@ export const PlanList = () => {
 
   return (
     <section className="w-full px-3 sm:px-5 lg:px-8">
-      {/* ================= HEADER ================= */}
+       
       <div className="mt-8 sm:mt-10">
         <h1 className="text-2xl font-bold sm:text-3xl">
           MY PLAN
@@ -65,10 +65,10 @@ export const PlanList = () => {
         </p>
       </div>
 
-      {/* ================= STATS ================= */}
+      
       <div className="mx-auto mt-5 grid w-full grid-cols-1 gap-3 rounded-2xl border border-white/10 bg-[#15181d] p-3 shadow-xl sm:grid-cols-3 sm:gap-4 sm:p-4">
 
-        {/* Exercise */}
+         
         <div className="rounded-xl border border-white/5 bg-[#1c2026] p-4 text-center transition hover:-translate-y-1 hover:border-lime-400/30 sm:p-5">
           <p className="text-xs font-medium text-gray-400 sm:text-sm">
             Exercise
@@ -83,7 +83,7 @@ export const PlanList = () => {
           </p>
         </div>
 
-        {/* Minutes */}
+       
         <div className="rounded-xl border border-white/5 bg-[#1c2026] p-4 text-center transition hover:-translate-y-1 hover:border-lime-400/30 sm:p-5">
           <p className="text-xs font-medium text-gray-400 sm:text-sm">
             Minutes
@@ -101,7 +101,7 @@ export const PlanList = () => {
           </p>
         </div>
 
-        {/* Calories */}
+       
         <div className="rounded-xl border border-white/5 bg-[#1c2026] p-4 text-center transition hover:-translate-y-1 hover:border-lime-400/30 sm:p-5">
           <p className="text-xs font-medium text-gray-400 sm:text-sm">
             Calories
@@ -120,7 +120,7 @@ export const PlanList = () => {
         </div>
       </div>
 
-      {/* ================= SORT ================= */}
+      
       <div className="mt-4 flex w-full items-center justify-between gap-3 sm:justify-end">
         <p className="text-xs text-gray-500 sm:hidden">
           Organize workouts
@@ -147,10 +147,10 @@ export const PlanList = () => {
         </div>
       </div>
 
-      {/* ================= TABS ================= */}
+       
       <div className="tabs tabs-lift mt-3 w-full">
 
-        {/* ================= TODAY'S PLAN ================= */}
+      
         <input
           type="radio"
           name="my_tabs"
@@ -195,7 +195,7 @@ export const PlanList = () => {
 
         </div>
 
-        {/* ================= SAVED ================= */}
+        
         <input
           type="radio"
           name="my_tabs"
