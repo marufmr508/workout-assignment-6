@@ -11,6 +11,7 @@ export const AddToTodayPlanButton = ({workout}:{workout:WorkoutType}) => {
          throw new Error("AddToTodayPlanButton must be used inside WorkoutProvider");
     }
     const {addToTodayPlan ,setAddToTodayPlan}=context;
+   
 
     const handleClick=()=>{
         
