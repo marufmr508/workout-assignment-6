@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="mx-auto mt-1 flex min-h-[72px] w-full items-center justify-between gap-2 rounded-md border border-gray-400 bg-[#0b0c0f] px-3 text-white sm:px-5 md:px-6">
       
-      {/* Logo */}
+      
       <Link href="/" className="flex shrink-0 items-center gap-2 sm:gap-3">
         <Image
           src={logo}
@@ -34,10 +34,10 @@ export default function Navbar() {
         </span>
       </Link>
 
-      {/* Navigation */}
+    
       <div className="flex items-center gap-1 sm:gap-2">
         
-        {/* Workout */}
+         
         <Link
           href="/#library"
           className={`rounded-full px-3 py-2 text-xs font-semibold transition sm:px-5 sm:text-sm ${
@@ -49,7 +49,7 @@ export default function Navbar() {
           Workout
         </Link>
 
-        {/* My Plan */}
+        
         <Link
           href="/my-plan"
           className={`rounded-full px-3 py-2 text-xs font-semibold transition sm:px-5 sm:text-sm ${
@@ -62,10 +62,10 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* Counters */}
+     
       <div className="flex shrink-0 items-center gap-2 sm:gap-4 md:gap-7">
         
-        {/* Plan */}
+        
         <Link
           href="/my-plan"
           className="flex items-center gap-1 text-gray-300 transition hover:text-white sm:gap-2"
@@ -79,7 +79,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Saved */}
+         
         <Link
           href="/my-plan"
           className="flex items-center gap-1 text-gray-400 transition hover:text-white sm:gap-2"
