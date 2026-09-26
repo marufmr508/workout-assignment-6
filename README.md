@@ -24,7 +24,11 @@ Each workout has a dedicated details page containing the workout image, descript
 
 ### 3. Today's Workout Plan
 
+Users can add workouts to today's plan and manage their selected exercises in one place. The plan allows a maximum of five workouts and prevents duplicate entries.
+
 ### 4. Save Workouts for Later
+
+Users can save their favorite workouts for later and access them from the Saved section. Duplicate workouts are automatically prevented.
 
 ### 5. My Plan Management
 
